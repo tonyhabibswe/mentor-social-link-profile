@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+    <style>
+      :root {
+        --green: hsl(75, 94%, 57%);
+        --white: hsl(0, 0%, 100%);
+        --grey: hsl(0, 0%, 20%);
+        --dark-grey: hsl(0, 0%, 12%);
+        --off-black: hsl(0, 0%, 12%);
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        font-family: "Inter", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        color: var(--white);
+        font-size: 14px;
+        background-color: var(--off-black);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+      .img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+      }
+      .name {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      .location {
+        color: var(--green);
+        font-size: 11px;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+      .title {
+        font-size: 11px;
+        text-align: center;
+        
+      }
+      .links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .link {
+        padding: 0.7rem 1rem;
+        margin-top: 12px;
+        width: 250px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--grey);
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .link:hover {
+        background-color: var(--green);
+        color: var(--off-black);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img class="img" src="assets/images/avatar-jessica.jpeg" alt="">
+      <h2 class="name">Jessica Randall</h6>
+      <p class="location">London, United Kingdom</p>
+      <p class="title">"Front-end developer and avis reader."</p>
+      <ul class="links">
+        <li class="link">GitHub</li>
+        <li class="link">Frontend Mentor</li>
+        <li class="link">LinkedIn</li>
+        <li class="link">Twitter</li>
+        <li class="link">Instagram</li>
+      </ul>
+    </div>
+  </body>
+</html>
